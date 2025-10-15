@@ -2,13 +2,9 @@ import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useCart } from '../context/CartContext'; 
 
-// ⚠️ IMPORTANTE: Necesitas usar la misma lista de datos que en CataloguePage.jsx
-// Para fines de ejemplo, la definimos aquí, pero en un proyecto real DEBERÍA importarse de un archivo centralizado.
-
-import img1 from '../assets/img2.jpg'; // Asegura que la ruta sea correcta desde CataloguePage.jsx
+import img1 from '../assets/img2.jpg';
 import img2 from '../assets/img1.jpg'; 
 
-// ⚠️ REEMPLAZA ESTOS DATOS con la fuente real de tu aplicación (la misma que usa CataloguePage)
 const perfumeData = [
   { 
     id: 1, 
@@ -26,19 +22,16 @@ const perfumeData = [
     description: 'Una fragancia fresca y sensual para el hombre moderno.',
     image: img2
   },
-  // ¡Añade más perfumes aquí!
 ];
 
 
 const ProductDetailPage = () => {
-  const { id } = useParams(); // Obtiene el parámetro 'id' de la URL
+  const { id } = useParams();
   const { addToCart } = useCart();
-  const navigate = useNavigate(); // Para volver al catálogo
+  const navigate = useNavigate();
 
-  // Busca el perfume: el ID de useParams es un string, por eso usamos parseInt
   const perfume = perfumeData.find(p => p.id === parseInt(id)); 
 
-  // Si no se encuentra el producto, muestra un error
   if (!perfume) {
     return (
       <div className="container mt-5 text-center py-5">
@@ -51,7 +44,6 @@ const ProductDetailPage = () => {
     );
   }
 
-  // Formatea el precio a CLP (o el formato chileno: . puntos y , coma)
   const formattedPrice = perfume.price.toLocaleString('es-CL', { 
     style: 'currency', 
     currency: 'CLP', 
@@ -62,7 +54,7 @@ const ProductDetailPage = () => {
     <div className="content-section-wrapper py-5">
       <div className="row g-5 align-items-center">
         
-        {/* Columna de la Imagen */}
+        {}
         <div className="col-md-5 text-center">
           <img 
             src={perfume.image} 
@@ -72,7 +64,7 @@ const ProductDetailPage = () => {
           />
         </div>
         
-        {/* Columna de Detalles y Compra */}
+        {}
         <div className="col-md-7">
           
           <h1 className="display-4 fw-bold mb-1">{perfume.name}</h1>
@@ -85,7 +77,7 @@ const ProductDetailPage = () => {
           
           <hr className="my-4" />
           
-          {/* Precio y Botón de Compra */}
+          {}
           <div className="d-flex align-items-center mb-4">
             <span className="product-price-ref me-4">
                 {formattedPrice}

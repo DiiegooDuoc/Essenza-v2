@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const HomePage = () => {
   return (
     <>
-      {/* 1. SECCIÓN PRINCIPAL (HERO) */}
+      {}
       <header className="p-5 text-center bg-light border-bottom mb-5">
         <div className="container">
           <h1 className="display-4 fw-bold mb-3">
@@ -20,11 +20,11 @@ const HomePage = () => {
         </div>
       </header>
 
-      {/* 2. SECCIÓN DE INFORMACIÓN Y BENEFICIOS */}
-      <div className="content-section-wrapper py-4"> {/* Usamos el contenedor para centrar y limitar ancho */}
+      {}
+      <div className="content-section-wrapper py-4"> {}
         <div className="row g-5"> 
           
-          {/* Columna Izquierda: Tu destino para los mejores perfumes */}
+          {}
           <div className="col-lg-6 mb-4 mb-lg-0">
             <h2 className="fs-3 fw-bold section-title-custom">
               Tu destino para los mejores perfumes
@@ -47,7 +47,7 @@ const HomePage = () => {
             </p>
           </div>
 
-          {/* Columna Derecha: Acerca de Nosotros */}
+          {}
           <div className="col-lg-6">
             <h2 className="fs-3 fw-bold section-title-custom">
               Acerca de Nosotros
@@ -59,7 +59,7 @@ const HomePage = () => {
         </div>
       </div>
       
-      {/* 3. NUEVA SECCIÓN DE CONTACTO */}
+      {}
       <div className="content-section-wrapper py-5">
           <h2 className="section-title-custom">Contacto</h2>
           
@@ -76,14 +76,14 @@ const HomePage = () => {
           
           <p className="mb-3">También puedes seguirnos en nuestras redes sociales:</p>
           
-          {/* Redes Sociales con enlaces y espaciado de Bootstrap */}
+          {}
           <div className="d-flex gap-3 mb-5">
             <a href="#" className="fw-bold text-dark text-decoration-none">Facebook</a>
             <a href="#" className="fw-bold text-dark text-decoration-none">Instagram</a>
             <a href="#" className="fw-bold text-dark text-decoration-none">Twitter</a>
           </div>
           
-          {/* Espacio para el mapa (Puedes incrustar un iframe o usar un placeholder) */}
+          {}
           <div className="map-placeholder border shadow-sm" style={{height: '300px', width: '100%', backgroundColor: '#eee'}}>
             <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.123456789012!2d-70.648123456789!3d-33.456123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c12345678901%3A0x1234567890abcdef!2sAv.%20Perfumes%20123%2C%20Santiago%2C%20Chile!5e0!3m2!1ses!2scl!4v1612345678901!5m2!1ses!2scl" 
@@ -93,8 +93,8 @@ const HomePage = () => {
                 allowFullScreen="" 
                 loading="lazy"
             ></iframe>
-            {/* Si no puedes usar iframes, usa el siguiente placeholder: */}
-            {/* <div className="p-5 text-center text-muted">Aquí iría el mapa de Google Maps</div> */}
+            {}
+            {}
           </div>
       </div>
     </>

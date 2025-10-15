@@ -4,7 +4,6 @@ import './index.css'
 import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
-// 👈 ¡NUEVA LÍNEA CLAVE! Importa el JS de Bootstrap
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; 
 import { CartProvider } from './context/CartContext.jsx'; 
 

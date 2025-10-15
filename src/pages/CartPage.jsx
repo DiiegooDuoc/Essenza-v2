@@ -1,18 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useCart } from '../context/CartContext'; // Importamos el hook para acceder al estado
+import { useCart } from '../context/CartContext';
 
 const CartPage = () => {
-  // Obtiene el estado y las funciones del carrito
   const { cartItems, removeFromCart, getTotalItems } = useCart();
   
-  // Función para calcular el total a pagar
-  // Ajustamos toFixed(0) para simular el formato de precio chileno sin decimales
   const getCartTotal = () => {
     return cartItems.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(0);
   };
 
-  // Función para formatear el precio a moneda local (CLP)
   const formatPrice = (price) => {
     return price.toLocaleString('es-CL', { 
         style: 'currency', 
@@ -39,19 +35,18 @@ const CartPage = () => {
     <div className="content-section-wrapper py-5">
       <h1 className="display-5 fw-bold text-center mb-5">Resumen de Compra</h1>
       
-      <div className="row g-4"> {/* g-4 añade más espacio entre columnas */}
-        {/* Columna Izquierda: Lista de Artículos del Carrito */}
+      <div className="row g-4"> {}
+        {}
         <div className="col-lg-8">
           <ul className="list-group">
             {cartItems.map((item) => (
               <li 
                 key={item.id} 
-                // Usamos 'align-items-start' para alinear elementos arriba
                 className="list-group-item d-flex justify-content-between align-items-start p-3" 
               >
-                {/* ⬅️ NUEVO: CONTENEDOR DE LA IMAGEN Y DETALLES */}
+                {}
                 <div className="d-flex align-items-center">
-                    {/* Imagen miniatura */}
+                    {}
                     <img 
                         src={item.image} 
                         alt={item.name} 
@@ -59,7 +54,7 @@ const CartPage = () => {
                         style={{ width: '60px', height: '60px', objectFit: 'contain' }} 
                     />
                     
-                    {/* Detalles del Producto */}
+                    {}
                     <div>
                         <h5 className="mb-1 fw-bold">{item.name}</h5>
                         <p className="mb-0 text-muted small">Marca: {item.brand}</p>
@@ -68,7 +63,7 @@ const CartPage = () => {
                     </div>
                 </div>
                 
-                {/* Botón de Eliminar (a la derecha) */}
+                {}
                 <button 
                   className="btn btn-sm btn-outline-danger mt-1"
                   onClick={() => removeFromCart(item.id)}
@@ -80,7 +75,7 @@ const CartPage = () => {
           </ul>
         </div>
 
-        {/* Columna Derecha: Total y Botón de Checkout */}
+        {}
         <div className="col-lg-4">
           <div className="card shadow-sm p-3 sticky-top" style={{top: '80px'}}>
             <h4 className="card-title fw-bold">Total a Pagar</h4>

@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif; /* Usamos una fuente genérica */
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -14,7 +14,6 @@ body {
     line-height: 1.6;
 }
 
-/* Base de la aplicación React */
 .App-container {
     display: flex;
     flex-direction: column;
@@ -28,22 +27,19 @@ main {
 /* 2. ESTILOS GENERALES Y SECCIONES */
 /* -------------------------------------- */
 
-/* Contenedor de las secciones (simula .seccion de tu referencia) */
 .content-section-wrapper { 
     padding: 50px 20px;
-    max-width: 1000px; /* Ancho máximo de la sección de contenido */
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-/* Títulos de Sección (Simula .seccion h2) */
 .section-title-ref {
     color: #222;
     margin-bottom: 20px;
-    /* Color de énfasis: #f1c40f */
     border-bottom: 3px solid #f1c40f; 
     display: inline-block;
     padding-bottom: 5px;
-    font-size: 1.75rem; /* Ajustado para ser más grande */
+    font-size: 1.75rem;
     font-weight: bold;
 }
 
@@ -51,12 +47,11 @@ main {
 /* 3. ESTILOS DE BOTONES */
 /* -------------------------------------- */
 
-/* Botón Ver Catálogo (Simula .inicio .boton-ver-productos) */
 .btn-catalogue-ref {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
-    background: #111; /* Color principal: Negro */
+    background: #111;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -66,7 +61,7 @@ main {
 }
 
 .btn-catalogue-ref:hover {
-    background: #f1c40f; /* Color de énfasis: Amarillo/Naranja */
+    background: #f1c40f;
     color: #111;
 }
 
@@ -84,7 +79,7 @@ main {
 /* Simula los bullet points con un punto */
 .list-unstyled li::before {
     content: '•'; 
-    color: #111; /* Los puntos suelen ser oscuros */
+    color: #111;
     font-weight: bold;
     display: inline-block;
     width: 1em;
@@ -95,13 +90,10 @@ main {
 /* ESTILO DE LA BARRA DE NAVEGACIÓN (Navbar) */
 /* -------------------------------------- */
 
-/* Simula el .encabezado de tu CSS de referencia (fondo oscuro y texto blanco) */
 .navbar-custom-ref {
-    /* Usamos el color oscuro de tu referencia */
     background: linear-gradient(135deg, #111, #333) !important;
 }
 
-/* Asegura que los enlaces dentro del Navbar sean blancos, como en tu referencia */
 .navbar-custom-ref .nav-link,
 .navbar-custom-ref .navbar-brand {
     color: white !important;
@@ -109,15 +101,13 @@ main {
     font-weight: bold;
 }
 
-/* Efecto hover con el color de énfasis de tu referencia */
 .navbar-custom-ref .nav-link:hover,
 .navbar-custom-ref .navbar-brand:hover {
-    color: #f1c40f !important; /* El color amarillo/naranja de énfasis */
+    color: #f1c40f !important;
 }
 
-/* Ajuste del botón Carrito para que se vea bien sobre fondo oscuro */
 .navbar-custom-ref .btn-outline-success {
-    color: #f1c40f !important; /* Texto del botón Carrito en color de énfasis */
+    color: #f1c40f !important;
     border-color: #f1c40f !important;
 }
 
@@ -132,11 +122,10 @@ main {
 
 /* Estilo de la tarjeta de producto */
 .product-card-ref {
-    /* Simula el borde y sombra suave */
     border: 1px solid #ddd; 
     border-radius: 8px;
     padding: 15px;
-    height: 100%; /* Asegura que todas las tarjetas sean iguales */
+    height: 100%;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -146,13 +135,12 @@ main {
     transform: translateY(-2px);
 }
 
-/* Título de la tarjeta (Subrayado amarillo/naranja) */
 .product-title-ref {
     font-size: 1.25rem;
     font-weight: bold;
-    color: #333; /* Color de texto oscuro */
+    color: #333;
     margin-bottom: 0.5rem;
-    border-bottom: 3px solid #f1c40f; /* Color de énfasis de tu diseño */
+    border-bottom: 3px solid #f1c40f;
     display: inline-block;
     padding-bottom: 5px;
 }
@@ -161,13 +149,13 @@ main {
 .product-price-ref {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #333; /* Precio en color oscuro */
+    color: #333;
     margin-top: 10px;
 }
 
 /* Contenedor de la imagen */
 .product-image-container {
-    height: 250px; /* Altura fija para la imagen */
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
