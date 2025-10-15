@@ -1,0 +1,21 @@
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.jsx'
+import { BrowserRouter } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+// 👈 ¡NUEVA LÍNEA CLAVE! Importa el JS de Bootstrap
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; 
+import { CartProvider } from './context/CartContext.jsx'; 
+
+const rootElement = document.getElementById('root');
+
+createRoot(rootElement).render(
+  <StrictMode>
+    <CartProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </CartProvider>
+  </StrictMode>
+);
